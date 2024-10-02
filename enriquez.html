@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Resistor Color Code Login</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: black;
+  }
+  input[type="text"], input[type="password"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 200px;
+  }
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  h1 {
+    color:white;
+  }
+  label{
+    color:white;
+  }
+  div{
+    color:white;
+  }
+  
+</style>
+</head>
+<body>
+
+<h1>Welcome to Resistor Color Code</h1>
+
+<form>
+  <label for="email">Email:</label><br>
+  <input type="text" id="email" name="email"><br>
+
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password"><br><br>
+
+  <button type="button" onclick="checkLogin()">Log In</button>
+</form>
+
+<div id="loginResult"></div>
+
+<script>
+  function checkLogin() {
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+    let loginResult = document.getElementById("loginResult");
+
+    if (email === "Lorenz_cpp@yahoo.com" && password === "lorenzc++_") {
+      loginResult.innerHTML = "Login Successful!";
+      // Redirect to another file or website
+      window.location.href = "https://webdevhtml13.github.io/Resistor-Color-Code-Calculator-/lorenz_cpp.html"; // Replace with your actual URL
+    } else {
+      loginResult.innerHTML = "Login Failed!";
+    }
+  }
+</script>
+
+</body>
+</html>
